@@ -1,2 +1,29 @@
 <h1>Hola {{nombre}}</h1>
+<br>
+<button (click) = saySomething() >saysomething</button>
 
+<br>
+<br>
+
+<div *ngFor="let car of cars">
+    {{car.make}} {{car.model}}  with a mileage of {{car.miles}}
+</div>
+
+<br>
+<br>
+
+<div>
+    <div class="number-display">
+        {{counter}}
+    </div>
+    <button (click) = increment()> increment </button>
+</div>
+
+<br>
+<br>
+
+<div class="number-display">
+    {{phrase}}
+</div>
+<br>
+<button (click) = update()>Update</button>
