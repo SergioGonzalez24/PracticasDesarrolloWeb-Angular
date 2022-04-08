@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Car } from './Car';
+import { FormsModule } from '@angular/forms'; 
+
 
 @Component({
   selector: 'app-root',
@@ -8,6 +10,8 @@ import { Car } from './Car';
 })
 export class AppComponent {
   nombre = "Mundo";
+  //username = "";
+  
 
   subaru: Car = { make: 'Subaru', model: 'Outback', miles: 58232 };
   honda: Car = { make: 'Honda', model: 'Accord', miles: 39393 };
@@ -15,6 +19,8 @@ export class AppComponent {
   cars: Car[] = [this.subaru, this.honda, this.bmw];
 
   constructor(){}
+
+  user:string="";
 
   saySomething() {
     alert("Hola mundo");
@@ -28,6 +34,8 @@ phrase = "Its going...";
 update() {
   this.phrase += "..and going";
 }
+
+
 
 }
 

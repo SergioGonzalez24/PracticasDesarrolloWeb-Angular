@@ -13,7 +13,7 @@
 <br>
 
 <div>
-    <div class="number-display">
+    <div class="display">
         {{counter}}
     </div>
     <button (click) = increment()> increment </button>
@@ -22,8 +22,16 @@
 <br>
 <br>
 
-<div class="number-display">
+<div class="display">
     {{phrase}}
 </div>
 <br>
 <button (click) = update()>Update</button>
+<br>
+<br>
+<div class>
+    <div class="display">
+        {{user}}
+    </div>
+    <!--<input type="text" [(ngModel)]="user" placeholder="enter a username">-->
+</div>
